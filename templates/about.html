@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kenali pendekatan, minat, dan skill di balik DevProfile.">
+    <title>DevProfile | About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Navigasi utama">
+            <a class="brand" href="{{ url_for('home') }}">Dev<span>Profile</span></a>
+            <div class="nav-links">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a class="active" href="{{ url_for('about') }}">About</a>
+                <a href="{{ url_for('contact') }}">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-main container">
+        <section class="page-intro">
+            <p class="eyebrow">A LITTLE ABOUT ME</p>
+            <h1>Building with <span>curiosity.</span></h1>
+            <p>Saya adalah seorang developer yang tertarik pada proses membuat ide menjadi website dan aplikasi yang bermanfaat.</p>
+        </section>
+
+        <section class="about-layout">
+            <article class="content-card about-story">
+                <p class="eyebrow">MY APPROACH</p>
+                <h2>Belajar, mencoba, lalu membuat lebih baik.</h2>
+                <p>Bagi saya, pengembangan web adalah perpaduan antara pemecahan masalah dan kreativitas. Saya menikmati belajar teknologi baru, menulis kode yang mudah dipahami, dan memperhatikan pengalaman orang yang menggunakan hasilnya.</p>
+                <p>DevProfile adalah ruang sederhana untuk menunjukkan minat dan skill yang terus saya kembangkan—tanpa berhenti belajar.</p>
+            </article>
+            <aside class="quote-card">
+                <span class="quote-mark" aria-hidden="true">“</span>
+                <p>Setiap proyek adalah kesempatan untuk belajar sesuatu yang baru.</p>
+                <span class="quote-caption">MY DEVELOPER MINDSET</span>
+            </aside>
+        </section>
+
+        <section class="about-skills">
+            <div class="section-heading">
+                <p class="eyebrow">WHAT I USE</p>
+                <h2>My Skills</h2>
+                <p class="section-subtitle">Teknologi yang saya gunakan dan terus pelajari.</p>
+            </div>
+            <div class="skill-grid">
+                <article class="skill-card"><span class="skill-mark mark-html">&lt;/&gt;</span><h3>HTML</h3><p>Membangun struktur halaman yang semantik.</p></article>
+                <article class="skill-card"><span class="skill-mark mark-css">✳</span><h3>CSS</h3><p>Mengatur layout, warna, dan tampilan responsif.</p></article>
+                <article class="skill-card"><span class="skill-mark mark-js">JS</span><h3>JavaScript</h3><p>Menambahkan perilaku interaktif pada halaman.</p></article>
+                <article class="skill-card"><span class="skill-mark mark-python">Py</span><h3>Python</h3><p>Membuat logika aplikasi yang mudah dibaca.</p></article>
+                <article class="skill-card"><span class="skill-mark mark-flask">Fl</span><h3>Flask</h3><p>Membangun aplikasi web ringan dengan Python.</p></article>
+            </div>
+        </section>
+
+        <section class="why-code content-card">
+            <div><p class="eyebrow">THE REASON</p><h2>Why I Code</h2></div>
+            <p>Saya membuat aplikasi dan website karena teknologi bisa membantu menyelesaikan masalah sehari-hari. Dari ide kecil hingga fitur yang berguna, proses belajar dan melihat sesuatu bekerja adalah bagian yang paling menyenangkan.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner"><a class="brand footer-brand" href="{{ url_for('home') }}">Dev<span>Profile</span></a><p>Dirancang dengan rasa ingin tahu dan sedikit ☕</p><p class="copyright">© 2025 DevProfile</p></div>
+    </footer>
+</body>
+</html>
